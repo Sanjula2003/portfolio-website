@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ============================================================
+       META & SEO
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Sanjula Bandara — Data Science Undergraduate specializing in Machine Learning, Python, Analytics, and AI projects." />
+  <meta name="keywords" content="Data Science, Machine Learning, Python, SQL, Power BI, Analytics, Portfolio, AI, Data Visualization" />
+  <meta name="author" content="Sanjula Bandara" />
+  <meta property="og:title" content="Sanjula Bandara — Developer Portfolio" />
+  <meta property="og:description" content="Transforming data into actionable insights and intelligent solutions." />
+  <meta property="og:type" content="website" />
+  <title>Sanjula Bandara — Data Science Undergraduate </title>
+
+  <!-- ============================================================
+       GOOGLE FONTS
+       Display: Playfair Display (editorial serif)
+       Body: DM Mono (refined monospace)
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       FONT AWESOME ICONS
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- ============================================================
+       STYLESHEET
+  ============================================================ -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">SB</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <span class="loader-label">Loading experience…</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCROLL PROGRESS INDICATOR
+  ============================================================ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+  ============================================================ -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Alex Morgan home">
+        <span class="logo-mark">SB</span>
+        <span class="logo-text">Sanjula Bandara</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home"     class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <i class="fa-solid fa-sun"  id="icon-sun"  aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" id="icon-moon" aria-hidden="true"></i>
+        </button>
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="mobile-links" role="list">
+        <li><a href="#home"     class="mobile-link">Home</a></li>
+        <li><a href="#about"    class="mobile-link">About</a></li>
+        <li><a href="#skills"   class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact"  class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==========================================================
+         SECTION 1 — HERO
+    ========================================================== -->
+    <section id="home" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-text">
+          <span class="eyebrow-line"></span>
+          <span>Open to Internships & Collaborations</span>
+        </p>
+
+        <h1 id="hero-heading" class="hero-name">
+          <span class="hero-name-first">Sanjula</span>
+          <em class="hero-name-last">Bandara</em>
+        </h1>
+
+        <!-- Typing animation target -->
+        <p class="hero-role" aria-live="polite">
+          I craft&nbsp;<span id="typed-text" class="typed-accent"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+
+        <p class="hero-bio">
+          Data Science Undergraduate | Machine Learning Enthusiast | Data Analyst
+            Passionate about transforming raw data into meaningful insights through Machine Learning, Analytics, and AI-driven solutions.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            View My Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Let's Talk <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Stats counters -->
+        <div class="hero-stats" aria-label="Career statistics">
+          <div class="stat-item">
+            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Skills</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">ML Deployments</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll hint -->
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span class="scroll-hint-text">Scroll</span>
+        <div class="scroll-hint-icon" aria-hidden="true">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==========================================================
+         SECTION 2 — ABOUT
+    ========================================================== -->
+    <section id="about" class="about-section section-pad" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-label reveal-up">
+          <span>02 — About</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Photo column -->
+          <div class="about-photo-col reveal-left">
+            <div class="photo-frame">
+              <img
+                src="dp.jpeg"
+                alt="Alex Morgan — Full-Stack Developer"
+                class="about-photo"
+                loading="lazy"
+              />
+              <div class="photo-badge" aria-label="Currently available for work">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                Open to Work
+              </div>
+            </div>
+          </div>
+
+          <!-- Text column -->
+          <div class="about-text-col reveal-right">
+            <h2 id="about-heading" class="section-heading">
+              My journey in<br /><em>Data Science</em>
+            </h2>
+            <p class="about-bio">
+              Hi, I'm Sanjula Bandara — a Data Science undergraduate passionate about Machine Learning, Data Analytics, and Artificial Intelligence.
+
+                
+            </p>
+            <p class="about-bio">
+              I enjoy building practical projects that solve real-world problems using Python, SQL, and data visualization tools. My goal is to become a skilled Data Scientist who can create intelligent systems powered by meaningful insights.
+
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>Sri Lanka</span>
+              </div>
+              <div class="detail-item">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>sanjulabandara1113@gmail.com</span>
+              </div>
+              <div class="detail-item">
+                <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                <span>Data Scientist / ML Engineer</span>
+              </div>
+              <div class="detail-item">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                <span>BSc (Hons) Data Science</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#" class="btn btn-primary" download aria-label="Download resume PDF">
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SECTION 3 — SKILLS
+    ========================================================== -->
+    <section id="skills" class="skills-section section-pad" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-label reveal-up">
+          <span>03 — Skills</span>
+        </div>
+
+        <h2 id="skills-heading" class="section-heading reveal-up">
+          My technical<br /><em>arsenal</em>
+        </h2>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skill-category reveal-up">
+            <h3 class="skill-cat-title">
+              <i class="fa-solid fa-code" aria-hidden="true"></i> Programming Languages
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Python</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="React / Next.js proficiency 92%">
+                  <div class="skill-bar-fill" data-width="92"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>R</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript proficiency 88%">
+                  <div class="skill-bar-fill" data-width="88"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>SQL</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="CSS proficiency 95%">
+                  <div class="skill-bar-fill" data-width="95"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category reveal-up" style="--delay:.1s">
+            <h3 class="skill-cat-title">
+              <i class="fa-solid fa-server" aria-hidden="true"></i> Data Science & Analytics
+
+
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Machine Learning</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js proficiency 90%">
+                  <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Data Visualization</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 78%">
+                  <div class="skill-bar-fill" data-width="78"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Exploratory Data Analysis</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Database proficiency 85%">
+                  <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category reveal-up" style="--delay:.2s">
+            <h3 class="skill-cat-title">
+              <i class="fa-solid fa-cloud" aria-hidden="true"></i> Tools &amp; Platforms
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Power BI</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Docker proficiency 80%">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Jupyter Notebook</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="AWS proficiency 82%">
+                  <div class="skill-bar-fill" data-width="82"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Streamlit</span><span class="skill-pct"></span>
+                </div>
+                <div class="skill-bar-track" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency 94%">
+                  <div class="skill-bar-fill" data-width="94"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech badge cloud -->
+        <div class="tech-badges reveal-up">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Pandas</span>
+          <span class="tech-badge">NumPy</span>
+          <span class="tech-badge">Scikit-learn</span>
+          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">Power BI</span>
+          <span class="tech-badge">Matplotlib</span>
+          <span class="tech-badge">SQL</span>
+          <span class="tech-badge">Seaborn</span>
+          <span class="tech-badge">GitHub</span>
+          <span class="tech-badge">Jupyter Notebook</span>
+          <span class="tech-badge">Streamlit</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SECTION 4 — PROJECTS
+    ========================================================== -->
+    <section id="projects" class="projects-section section-pad" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-label reveal-up">
+          <span>04 — Projects</span>
+        </div>
+
+        <div class="projects-header reveal-up">
+          <h2 id="projects-heading" class="section-heading">
+            Selected<br /><em>work</em>
+          </h2>
+
+          <!-- Filter buttons -->
+          <div class="filter-group" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fullstack">Machine Learning</button>
+            <button class="filter-btn" data-filter="frontend">Data Analysis</button>
+            <button class="filter-btn" data-filter="backend">University Projects</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal-up" data-category="fullstack" aria-label="NexaCommerce project">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=75"
+                alt="NexaCommerce e-commerce platform screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Streamlit</span>
+              </div>
+              <h3 class="project-title">Iris Flower Prediction</h3>
+              <p class="project-desc">Interactive Machine Learning web app that predicts Iris flower species using classification algorithms.</p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View NexaCommerce live demo" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="#" class="project-link project-link-ghost" aria-label="View NexaCommerce GitHub repository" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal-up" data-category="frontend" style="--delay:.1s" aria-label="MotionUI project">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=75"
+                alt="MotionUI design system screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Streamlit</span>
+              </div>
+              <h3 class="project-title">Rock vs Mine Prediction</h3>
+              <p class="project-desc">Machine Learning classification system using Logistic Regression to predict whether sonar signals represent rocks or mines.</p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View MotionUI live demo" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="#" class="project-link project-link-ghost" aria-label="View MotionUI GitHub repository" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal-up" data-category="backend" style="--delay:.2s" aria-label="Synapse API project">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&q=75"
+                alt="Synapse API dashboard screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Backend</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">GraphQL</span>
+              </div>
+              <h3 class="project-title">Synapse API Platform</h3>
+              <p class="project-desc">A developer-first GraphQL API gateway with rate-limiting, auth, and real-time analytics. Processes 2M+ requests per day.</p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Synapse API live demo" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="#" class="project-link project-link-ghost" aria-label="View Synapse API GitHub repository" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 
+          <article class="project-card reveal-up" data-category="fullstack" style="--delay:.05s" aria-label="Chronicle app project">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=75"
+                alt="Chronicle productivity app screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Full-Stack</span>
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">PostgreSQL</span>
+              </div>
+              <h3 class="project-title">Chronicle — Smart Journaling</h3>
+              <p class="project-desc">An AI-enhanced journaling app with mood tracking, insights, and end-to-end encryption. 8k+ active users and growing.</p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Chronicle live demo" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="#" class="project-link project-link-ghost" aria-label="View Chronicle GitHub repository" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+-->
+          <!-- Project 5 
+          <article class="project-card reveal-up" data-category="frontend" style="--delay:.15s" aria-label="DataViz Studio project">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75"
+                alt="DataViz Studio dashboard screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Frontend</span>
+                <span class="project-tag">D3.js</span>
+                <span class="project-tag">React</span>
+              </div>
+              <h3 class="project-title">DataViz Studio</h3>
+              <p class="project-desc">A no-code data visualization builder with drag-and-drop chart creation, live data connectors, and shareable dashboards.</p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View DataViz Studio live demo" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="#" class="project-link project-link-ghost" aria-label="View DataViz Studio GitHub repository" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+-->
+          <!-- Project 6 
+          <article class="project-card reveal-up" data-category="backend" style="--delay:.25s" aria-label="Vault Auth project">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=75"
+                alt="Vault authentication service screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Backend</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Redis</span>
+              </div>
+              <h3 class="project-title">Vault Auth Service</h3>
+              <p class="project-desc">A drop-in authentication microservice supporting OAuth2, SAML, and passkey — deployed as a Docker container with Kubernetes orchestration.</p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Vault Auth live demo" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="#" class="project-link project-link-ghost" aria-label="View Vault Auth GitHub repository" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+-->
+        </div><!-- /.projects-grid -->
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SECTION 5 — CONTACT
+    ========================================================== -->
+    <section id="contact" class="contact-section section-pad" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-label reveal-up">
+          <span>05 — Contact</span>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: info -->
+          <div class="contact-info reveal-left">
+            <h2 id="contact-heading" class="section-heading">
+              Let's build<br /><em>something great</em>
+            </h2>
+            <p class="contact-tagline">
+              Interested in collaborating, internships, or discussing data science projects? Feel free to reach out.
+            </p>
+
+            <div class="contact-details">
+              <a href="mailto:hello@alexmorgan.dev" class="contact-detail-item" aria-label="Send email to Alex Morgan">
+                <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-detail-label">Email</span>
+                  <span class="contact-detail-value">sanjulabandara1113@gmail.com</span>
+                </div>
+              </a>
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-detail-label">Location</span>
+                  <span class="contact-detail-value">Sri Lanka</span>
+                </div>
+              </div>
+              <!--
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-detail-label">Response time</span>
+                  <span class="contact-detail-value">Within 24 hours</span>
+                </div>
+              </div>
+              -->
+            </div>
+
+            <!-- Social links -->
+            <div class="contact-social" aria-label="Social media links">
+              <a href="https://github.com/Sanjula2003" class="social-btn" aria-label="GitHub profile" rel="noopener">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/danushasanjula/" class="social-btn" aria-label="LinkedIn profile" rel="noopener">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+ <!--
+              <a href="#" class="social-btn" aria-label="Twitter / X profile" rel="noopener">
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="Dribbble profile" rel="noopener">
+                <i class="fa-brands fa-dribbble" aria-hidden="true"></i>
+              </a>
+-->
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div class="contact-form-wrap reveal-right">
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="f-name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="f-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="John Doe"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="f-name-error"
+                />
+                <span class="form-error" id="f-name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="f-email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="f-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="john@example.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="f-email-error"
+                />
+                <span class="form-error" id="f-email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="f-subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="f-subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Project inquiry"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="f-message" class="form-label">Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="f-message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Tell me about your project…"
+                  rows="5"
+                  required
+                  aria-required="true"
+                  aria-describedby="f-message-error"
+                ></textarea>
+                <span class="form-error" id="f-message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              </button>
+
+              <!-- Success / error feedback -->
+              <div id="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="footer-logo-mark">SB</span>
+        <span class="footer-tagline">Turning data into meaningful solutions.</span>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://github.com/Sanjula2003" aria-label="GitHub" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/danushasanjula/" aria-label="LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <!--
+        <a href="#" aria-label="Twitter" rel="noopener"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Dribbble" rel="noopener"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+        -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Sanjula Bandara. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>
