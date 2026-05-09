@@ -90,7 +90,7 @@ function initLoader() {
    Persists preference to localStorage. Respects system preference
    as initial default if no stored value exists.
 ================================================================ */
-function initThemeToggle() {
+/*function initThemeToggle() {
   const html   = document.documentElement;
   const btn    = $('#theme-toggle');
   const STORAGE_KEY = 'portfolio-theme';
@@ -114,6 +114,12 @@ function initThemeToggle() {
     // Announce to screen readers
     btn.setAttribute('aria-label', `Switch to ${current} theme`);
   });
+}
+*/
+
+function initThemeToggle() {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  localStorage.setItem('portfolio-theme', 'dark');
 }
 
 
